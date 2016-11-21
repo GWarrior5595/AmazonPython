@@ -1,0 +1,44 @@
+AWSAccessKeyId = "AKIAIMKJHSGQA6ASXMPQ"
+AssociateTag = "seangrahamaws-20"
+Signature = "RZDnfx964m4maCWSOvWCnPERW+NExH5RwAfpb9vI"
+
+
+def remove_dashes_in_string(isbn_list):
+    for i in range(isbn_list):
+        isbn_list[i] = isbn_list[i].replace("-","")
+    return isbn_list
+
+# import datetime
+# import requests
+# import time
+# import urllib
+
+# def order_list_by_sales_rank(book_list):
+#     for book in book_list:
+
+# signatureTime = datetime.datetime.now().replace(microsecond=0).isoformat() + "Z"
+# print(signatureTime)
+
+# response = requests.get("""http://webservices.amazon.com/onca/xml?
+#   Service=AWSECommerceService
+#   &Operation=ItemLookup
+#   &ResponseGroup=Large
+#   &SearchIndex=All
+#   &IdType=ISBN
+#   &ItemId={}
+#   &AWSAccessKeyId={}
+#   &AssociateTag={}
+#   &Timestamp={}
+#   &Signature={}""".format(
+#     ISBN, 
+#     AWSAccessKeyId, 
+#     AssociateTag,
+#     signatureTime,
+#     Signature))
+
+# print(response.content)
+
+# soup = BeautifulSoup(response.content, "xml")
+# print " " 
+# print soup.Title.get_text()
+# print soup.SalesRank.get_text()

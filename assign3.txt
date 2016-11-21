@@ -1,0 +1,34 @@
+Assign 3 Due 11:59PM November 4
+
+A publisher is interested in keeping track of the rankings of their books on Amazon. They've asked us to write a program that will go out to Amazon with ISBN numbers, fetch the ranking of the books, and report the following details:
+
+Book title  isbn rank
+...					...	 ...
+...					...	 ...
+...					...	 ...
+...					...	 ...
+...					...	 ...
+...					...	 ...
+...					...	 ...
+
+The ISBN numbers may be read from a file.
+
+The report is printed in the order of the ranks, from the highest rank to the lowest.
+
+First implement the code using a sequential solution, where the code goes to Amazon with one ISBN number at a time. Work with a few ISBN numbers (10 or 20) as an example to try out the program. Use a mainstream language for this assignment (Java/C#/Ruby, etc. Check with Venkat if you're in doubt about your language choice).
+
+Then make the code concurrent, using the traditional threading and synchronization approach. Use proper locks to avoid race conditions.
+
+After completing that, explore a third solution that may avoid explicit threads and locks within the same language.
+
+In addition to printing the result, print also the time, in seconds, the solutions take.
+
+Provide a build file to run the program.
+
+For those who make use of reviews, take small steps, start with the sequential solution.
+
+Total [100]: 100
+Program works [10]:
+Sequential solution [30]:
+Concurrent solution [30]:
+Alternate concurrent solution [30]:
